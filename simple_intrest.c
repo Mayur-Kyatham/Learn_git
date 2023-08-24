@@ -5,4 +5,5 @@ int main(){
     int simpleInterest = (principal * rate * years)/100;
     printf("The value of simple Interest is %d", simpleInterest);
     return 0;
+    
 }
