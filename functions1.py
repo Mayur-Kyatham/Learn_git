@@ -1,6 +1,7 @@
 # This function calculates the number of days in a variable number of 
 # years, months, and days. These variables are provided by the user and
 # are passed to the function through the function’s parameters.
+
 def find_total_days(years, months, days):
 # Assign a variable to hold the calculations for the number of days in
 # a year (years*365) plus the number of days in a month (months*30) plus
