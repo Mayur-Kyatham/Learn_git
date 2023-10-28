@@ -2,8 +2,7 @@
 
 # Use a comparison operator to alphabetize strings
 
-#Mayur Kyatham
-
+#Mayur Kyatham 435
 # The value of 10*4 (40) is greater than 14+23 (37), therefore this 
 # comparison expression will return the Boolean value of True.
 
