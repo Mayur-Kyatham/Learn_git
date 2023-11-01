@@ -5,8 +5,6 @@ EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
 
 # Function to check user's guess against actual answer.
-
-
 def check_answer(guess, answer, turns):
     """checks answer against guess. Returns the number of turns remaining."""
     if guess > answer:
