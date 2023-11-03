@@ -7,7 +7,5 @@ greeting("Mayur", "Data Scientist")
 result = greeting("hello", "Mayur")
 print(result)
 
-
-
 rest = greeting
 print(rest)
