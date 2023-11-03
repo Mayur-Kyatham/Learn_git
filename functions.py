@@ -1,4 +1,4 @@
-# functions
+# Functions In Python
 
 def greeting(name, department):
     print("Welcome " + name)
