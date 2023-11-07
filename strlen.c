@@ -1,4 +1,4 @@
-// Learn git Mayur ramesh Kyatham
+// Learn git 
 #include<stdio.h>
 
 int strlen(char * st){
