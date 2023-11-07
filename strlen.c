@@ -1,4 +1,4 @@
-// Learn git
+// Learn git Mayur
 #include<stdio.h>
 
 int strlen(char * st){
