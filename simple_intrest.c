@@ -7,4 +7,4 @@ int main(){
     return 0;
     
 }
-// simple interest mayur 
+// simple interest mayur kyatham
