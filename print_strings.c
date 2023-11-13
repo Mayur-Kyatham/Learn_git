@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+// mayur Kyatham 
 int main(){
     // char str[] = "Mayur";
     char str[] = {'M', 'a', 'y', 'u', 'r', '\0'};
