@@ -2,6 +2,7 @@
 # The "years" list is given with existing elements. 
 years = ["January 2023", "May 2025", "April 2023", "August 2024", "September 2025", "December 2023"]
 
+
 # The variable "updated_years" is initialized as a list data type 
 # using empty square brackets []. This list will hold the new list
 # with the updated years. 
