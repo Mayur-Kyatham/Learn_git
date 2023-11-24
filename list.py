@@ -8,7 +8,6 @@ updated_years = []
 
 # The for loop checks each "year" element in the list "years".
 for year in years:
-
     # The if-statement checks if the "year" element ends with the 
     # substring "2023". 
     if year.endswith("2023"):
