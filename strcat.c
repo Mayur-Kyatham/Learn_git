@@ -7,4 +7,3 @@ int main(){
     printf("Now the st1 is %s", st1);
     return 0;
 }
-# mayur kyatham
