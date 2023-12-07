@@ -10,3 +10,4 @@ wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
 for key in wardrobe:
   for values in wardrobe[key]:
     print("{} {}".format(values,key))
+# 
