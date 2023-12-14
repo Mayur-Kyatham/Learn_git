@@ -1,6 +1,7 @@
 import tkinter
 import tkinter.messagebox
 import pickle
+
 # klsadfhlds;hf
 
 root = tkinter.Tk()
@@ -34,7 +35,6 @@ def save_tasks():
     tasks = listbox_tasks.get(0, listbox_tasks.size())
     pickle.dump(tasks, open("tasks.dat", "wb"))
 
-sdfgdsgsd 
 
 frame_tasks = tkinter.Frame(root)
 frame_tasks.pack()
