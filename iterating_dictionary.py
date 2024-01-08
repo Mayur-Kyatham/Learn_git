@@ -11,3 +11,4 @@ print(file_content.values())
 
 for value in file_content.values():
     print(value)
+# iterating dictionary
