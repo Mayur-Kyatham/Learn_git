@@ -1,6 +1,5 @@
 // Write a program to determine whether a character entered by the user is lowercase or not in Python
 
-
 #include<stdio.h>
 int main(){
     // 97-122 = a-z ASCII Values
