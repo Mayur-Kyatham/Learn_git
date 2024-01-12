@@ -1,4 +1,5 @@
-// Write a program to determine whether a character entered by the user is lowercase or not.
+// Write a program to determine whether a character entered by the user is lowercase or not in Python
+
 
 #include<stdio.h>
 int main(){
