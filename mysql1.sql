@@ -21,7 +21,6 @@ INSERT INTO Worker
 		(006, 'Vipul', 'Diwan', 200000, '14-06-11 09.00.00', 'Account'),
 		(007, 'Satish', 'Kumar', 75000, '14-01-20 09.00.00', 'Account'),
 		(008, 'Geetika', 'Chauhan', 90000, '14-04-11 09.00.00', 'Admin');
-
 SELECT * FROM Worker;
 
 CREATE TABLE Bonus (
