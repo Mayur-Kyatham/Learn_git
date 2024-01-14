@@ -41,8 +41,8 @@ INSERT INTO Bonus
 		(003, 4000, '16-02-20'),
 		(001, 4500, '16-02-20'),
 		(002, 3500, '16-06-11');
-
 SELECT * FROM Bonus;
+
 
 CREATE TABLE Title (
 	WORKER_REF_ID INT,
