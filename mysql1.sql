@@ -1,3 +1,5 @@
+# MySQL first file
+	
 CREATE DATABASE ORG;
 SHOW DATABASES;
 USE ORG;
