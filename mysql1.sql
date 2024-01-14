@@ -25,6 +25,7 @@ INSERT INTO Worker
 		(008, 'Geetika', 'Chauhan', 90000, '14-04-11 09.00.00', 'Admin');
 SELECT * FROM Worker;
 
+
 CREATE TABLE Bonus (
 	WORKER_REF_ID INT,
 	BONUS_AMOUNT INT (10),
