@@ -1,4 +1,4 @@
-# Defining new class in python
+# Defining new class in Python
 
 class Apple:
     pass
