@@ -68,3 +68,6 @@ SELECT * FROM Title;
 
  -- Q-1. Write an SQL query to fetch “FIRST_NAME” from Worker table using the alias name as <WORKER_NAME>.
 select first_name AS WORKER_NAME from worker;
+
+-- Q-2. Write an SQL query to fetch “FIRST_NAME” from Worker table in upper case.
+select UPPER(first_name) from worker;
