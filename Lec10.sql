@@ -71,3 +71,7 @@ select first_name AS WORKER_NAME from worker;
 
 -- Q-2. Write an SQL query to fetch “FIRST_NAME” from Worker table in upper case.
 select UPPER(first_name) from worker;
+
+-- Q-3. Write an SQL query to fetch unique values of DEPARTMENT from Worker table.
+SELECT distinct department from worker;
+SELECT DEPARTMENT FROM WORKER GROUP BY DEPARTMENT;
