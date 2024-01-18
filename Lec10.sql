@@ -93,3 +93,7 @@ select distinct department, LENGTH(department) from worker;
 
 -- Q-9. Write an SQL query to print the FIRST_NAME from Worker table after replacing ‘a’ with ‘A’.
 select REPLACE(first_name, 'a', 'A')  from worker;
+
+-- Q-10. Write an SQL query to print the FIRST_NAME and LAST_NAME from Worker table into a single column COMPLETE_NAME.
+-- A space char should separate them.
+select CONCAT(first_name, ' ', last_name) AS COMPLETE_NAME from worker;
