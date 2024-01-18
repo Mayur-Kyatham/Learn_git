@@ -81,3 +81,6 @@ select substring(first_name, 1, 3) from worker;
 
 -- Q-5. Write an SQL query to find the position of the alphabet (‘b’) in the first name column ‘Amitabh’ from Worker table.
 select INSTR(first_name, 'B') from worker where first_name = 'Amitabh';
+
+-- Q-6. Write an SQL query to print the FIRST_NAME from Worker table after removing white spaces from the right side.
+select RTRIM(first_name) from worker;
