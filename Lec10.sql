@@ -84,3 +84,6 @@ select INSTR(first_name, 'B') from worker where first_name = 'Amitabh';
 
 -- Q-6. Write an SQL query to print the FIRST_NAME from Worker table after removing white spaces from the right side.
 select RTRIM(first_name) from worker;
+
+-- Q-7. Write an SQL query to print the DEPARTMENT from Worker table after removing white spaces from the left side.
+select LTRIM(first_name) from worker;
