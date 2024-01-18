@@ -78,3 +78,6 @@ SELECT DEPARTMENT FROM WORKER GROUP BY DEPARTMENT;
 
 -- Q-4. Write an SQL query to print the first three characters of  FIRST_NAME from Worker table.
 select substring(first_name, 1, 3) from worker;
+
+-- Q-5. Write an SQL query to find the position of the alphabet (‘b’) in the first name column ‘Amitabh’ from Worker table.
+select INSTR(first_name, 'B') from worker where first_name = 'Amitabh';
