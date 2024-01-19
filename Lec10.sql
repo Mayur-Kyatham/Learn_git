@@ -97,3 +97,6 @@ select REPLACE(first_name, 'a', 'A')  from worker;
 -- Q-10. Write an SQL query to print the FIRST_NAME and LAST_NAME from Worker table into a single column COMPLETE_NAME.
 -- A space char should separate them.
 select CONCAT(first_name, ' ', last_name) AS COMPLETE_NAME from worker;
+
+-- Q-11. Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending.
+select * from worker ORDER by first_name;
