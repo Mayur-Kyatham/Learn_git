@@ -104,3 +104,6 @@ select * from worker ORDER by first_name;
 -- Q-12. Write an SQL query to print all Worker details from the Worker table order by 
 -- FIRST_NAME Ascending and DEPARTMENT Descending.
 select * from worker order by first_name, department DESC;
+
+-- Q-13. Write an SQL query to print details for Workers with the first name as “Vipul” and “Satish” from Worker table.
+select * from worker where first_name IN ('Vipul', 'Satish');
