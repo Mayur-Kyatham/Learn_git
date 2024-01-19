@@ -107,3 +107,9 @@ select * from worker order by first_name, department DESC;
 
 -- Q-13. Write an SQL query to print details for Workers with the first name as “Vipul” and “Satish” from Worker table.
 select * from worker where first_name IN ('Vipul', 'Satish');
+
+-- Q-14. Write an SQL query to print details of workers excluding first names, “Vipul” and “Satish” from Worker table.
+select * from worker where first_name NOT IN ('Vipul', 'Satish');
+
+-- Q-15. Write an SQL query to print details of Workers with DEPARTMENT name as “Admin*”.
+select * from worker where department LIKE 'Admin%';
