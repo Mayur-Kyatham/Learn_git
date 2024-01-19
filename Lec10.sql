@@ -100,3 +100,7 @@ select CONCAT(first_name, ' ', last_name) AS COMPLETE_NAME from worker;
 
 -- Q-11. Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending.
 select * from worker ORDER by first_name;
+
+-- Q-12. Write an SQL query to print all Worker details from the Worker table order by 
+-- FIRST_NAME Ascending and DEPARTMENT Descending.
+select * from worker order by first_name, department DESC;
