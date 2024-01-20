@@ -116,3 +116,6 @@ select * from worker where department LIKE 'Admin%';
 
 -- Q-16. Write an SQL query to print details of the Workers whose FIRST_NAME contains ‘a’.
 select * from worker where first_name LIKE '%a%';
+
+-- Q-17. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘a’.
+select * from worker where first_name LIKE '%a';
