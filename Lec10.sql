@@ -119,3 +119,6 @@ select * from worker where first_name LIKE '%a%';
 
 -- Q-17. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘a’.
 select * from worker where first_name LIKE '%a';
+
+-- Q-18. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘h’ and contains six alphabets.
+select * from worker where first_name LIKE '_____h';
