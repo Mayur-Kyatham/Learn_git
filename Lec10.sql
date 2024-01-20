@@ -125,3 +125,6 @@ select * from worker where first_name LIKE '_____h';
 
 -- Q-19. Write an SQL query to print details of the Workers whose SALARY lies between 100000 and 500000.
 select * from worker where salary between 100000 AND 500000;
+
+-- Q-20. Write an SQL query to print details of the Workers who have joined in Feb’2014.
+select * from worker where YEAR(joining_date) = 2014 AND MONTH(joining_date) = 02;
