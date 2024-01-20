@@ -113,3 +113,6 @@ select * from worker where first_name NOT IN ('Vipul', 'Satish');
 
 -- Q-15. Write an SQL query to print details of Workers with DEPARTMENT name as “Admin*”.
 select * from worker where department LIKE 'Admin%';
+
+-- Q-16. Write an SQL query to print details of the Workers whose FIRST_NAME contains ‘a’.
+select * from worker where first_name LIKE '%a%';
