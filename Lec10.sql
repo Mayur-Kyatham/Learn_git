@@ -128,3 +128,6 @@ select * from worker where salary between 100000 AND 500000;
 
 -- Q-20. Write an SQL query to print details of the Workers who have joined in Feb’2014.
 select * from worker where YEAR(joining_date) = 2014 AND MONTH(joining_date) = 02;
+
+-- Q-21. Write an SQL query to fetch the count of employees working in the department ‘Admin’.
+select department, count(*) from worker where department = 'Admin';
