@@ -135,3 +135,7 @@ select department, count(*) from worker where department = 'Admin';
 -- Q-22. Write an SQL query to fetch worker full names with salaries >= 50000 and <= 100000.
 select concat(first_name, ' ', last_name) from worker
 where salary between 50000 and 100000;
+
+-- Q-23. Write an SQL query to fetch the no. of workers for each department in the descending order.
+select department, count(worker_id) AS no_of_worker from worker group by department
+ORDER BY no_of_worker desc;
