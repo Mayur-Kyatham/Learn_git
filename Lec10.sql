@@ -131,3 +131,7 @@ select * from worker where YEAR(joining_date) = 2014 AND MONTH(joining_date) = 0
 
 -- Q-21. Write an SQL query to fetch the count of employees working in the department ‘Admin’.
 select department, count(*) from worker where department = 'Admin';
+
+-- Q-22. Write an SQL query to fetch worker full names with salaries >= 50000 and <= 100000.
+select concat(first_name, ' ', last_name) from worker
+where salary between 50000 and 100000;
