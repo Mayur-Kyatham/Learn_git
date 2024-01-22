@@ -139,3 +139,6 @@ where salary between 50000 and 100000;
 -- Q-23. Write an SQL query to fetch the no. of workers for each department in the descending order.
 select department, count(worker_id) AS no_of_worker from worker group by department
 ORDER BY no_of_worker desc;
+
+-- Q-24. Write an SQL query to print details of the Workers who are also Managers.
+select w.* from worker as w inner join title as t on w.worker_id = t.worker_ref_id where t.worker_title = 'Manager';
