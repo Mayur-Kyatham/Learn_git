@@ -149,3 +149,6 @@ select worker_title, count(*) as count from title group by worker_title having c
 -- Q-26. Write an SQL query to show only odd rows from a table.
 select * from worker where MOD (WORKER_ID, 2) != 0; 
 select * from worker where MOD (WORKER_ID, 2) <> 0;
+
+-- Q-27. Write an SQL query to show only even rows from a table. 
+select * from worker where MOD (WORKER_ID, 2) = 0;
