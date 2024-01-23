@@ -152,3 +152,8 @@ select * from worker where MOD (WORKER_ID, 2) <> 0;
 
 -- Q-27. Write an SQL query to show only even rows from a table. 
 select * from worker where MOD (WORKER_ID, 2) = 0;
+
+-- Q-28. Write an SQL query to clone a new table from another table.
+CREATE TABLE worker_clone LIKE worker;
+INSERT INTO worker_clone select * from worker;
+select * from worker_clone;
