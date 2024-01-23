@@ -157,3 +157,6 @@ select * from worker where MOD (WORKER_ID, 2) = 0;
 CREATE TABLE worker_clone LIKE worker;
 INSERT INTO worker_clone select * from worker;
 select * from worker_clone;
+
+-- Q-29. Write an SQL query to fetch intersecting records of two tables.
+select worker.* from worker inner join worker_clone using(worker_id);
