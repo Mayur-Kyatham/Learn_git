@@ -145,3 +145,7 @@ select w.* from worker as w inner join title as t on w.worker_id = t.worker_ref_
 
 -- Q-25. Write an SQL query to fetch number (more than 1) of same titles in the ORG of different types.
 select worker_title, count(*) as count from title group by worker_title having count > 1;
+
+-- Q-26. Write an SQL query to show only odd rows from a table.
+select * from worker where MOD (WORKER_ID, 2) != 0; 
+select * from worker where MOD (WORKER_ID, 2) <> 0;
