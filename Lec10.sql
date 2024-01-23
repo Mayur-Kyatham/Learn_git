@@ -160,3 +160,7 @@ select * from worker_clone;
 
 -- Q-29. Write an SQL query to fetch intersecting records of two tables.
 select worker.* from worker inner join worker_clone using(worker_id);
+
+-- Q-30. Write an SQL query to show records from one table that another table does not have.
+-- MINUS
+select worker.* from worker left join worker_clone using(worker_id) WHERE worker_clone.worker_id is NULL;
