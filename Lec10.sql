@@ -164,3 +164,8 @@ select worker.* from worker inner join worker_clone using(worker_id);
 -- Q-30. Write an SQL query to show records from one table that another table does not have.
 -- MINUS
 select worker.* from worker left join worker_clone using(worker_id) WHERE worker_clone.worker_id is NULL;
+
+-- Q-31. Write an SQL query to show the current date and time.
+-- DUAL
+select curdate();
+select now();
