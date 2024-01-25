@@ -180,5 +180,9 @@ SELECT COUNT(DISTINCT (w2.salary))
 from worker w2
 where w2.salary >= w1.salary
 );
+
 -- Q-33. Write an SQL query to determine the nth (say n=5) highest salary from a table.
 select * from worker order by salary desc LIMIT 4,1;
+
+-- Q-35. Write an SQL query to fetch the list of employees with the same salary.
+select w1.* from worker w1, worker w2 where w1.salary = w2.salary and w1.worker_id != w2.worker_id;
