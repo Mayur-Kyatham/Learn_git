@@ -173,5 +173,12 @@ select now();
 -- Q-32. Write an SQL query to show the top n (say 5) records of a table order by descending salary.
 select * from worker order by salary desc LIMIT 5;
 
+-- Q-34. Write an SQL query to determine the 5th highest salary without using LIMIT keyword.
+select salary from worker w1
+WHERE 4 = (
+SELECT COUNT(DISTINCT (w2.salary))
+from worker w2
+where w2.salary >= w1.salary
+);
 -- Q-33. Write an SQL query to determine the nth (say n=5) highest salary from a table.
 select * from worker order by salary desc LIMIT 4,1;
