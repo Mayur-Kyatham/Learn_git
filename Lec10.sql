@@ -169,3 +169,6 @@ select worker.* from worker left join worker_clone using(worker_id) WHERE worker
 -- DUAL
 select curdate();
 select now();
+
+-- Q-32. Write an SQL query to show the top n (say 5) records of a table order by descending salary.
+select * from worker order by salary desc LIMIT 5;
