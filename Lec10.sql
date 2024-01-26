@@ -186,3 +186,7 @@ select * from worker order by salary desc LIMIT 4,1;
 
 -- Q-35. Write an SQL query to fetch the list of employees with the same salary.
 select w1.* from worker w1, worker w2 where w1.salary = w2.salary and w1.worker_id != w2.worker_id;
+
+-- Q-36. Write an SQL query to show the second highest salary from a table using sub-query.
+select max(salary) from worker
+where salary not in (select max(salary) from worker);
