@@ -201,3 +201,6 @@ select worker_id from worker where worker_id not in (select worker_ref_id from b
 
 -- Q-39. Write an SQL query to fetch the first 50% records from a table.
 select * from worker where worker_id <= ( select count(worker_id)/2 from worker);
+
+-- Q-40. Write an SQL query to fetch the departments that have less than 4 people in it.
+select department, count(department) as depCount from worker group by department having depCount < 4;
