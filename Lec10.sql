@@ -195,3 +195,6 @@ where salary not in (select max(salary) from worker);
 select * from worker
 UNION ALL
 select * from worker ORDER BY worker_id;
+
+-- Q-38. Write an SQL query to list worker_id who does not get bonus.
+select worker_id from worker where worker_id not in (select worker_ref_id from bonus);
