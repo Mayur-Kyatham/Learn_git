@@ -198,3 +198,6 @@ select * from worker ORDER BY worker_id;
 
 -- Q-38. Write an SQL query to list worker_id who does not get bonus.
 select worker_id from worker where worker_id not in (select worker_ref_id from bonus);
+
+-- Q-39. Write an SQL query to fetch the first 50% records from a table.
+select * from worker where worker_id <= ( select count(worker_id)/2 from worker);
