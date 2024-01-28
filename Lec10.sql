@@ -213,3 +213,6 @@ select * from worker where worker_id = (select max(worker_id) from worker);
 
 -- Q-43. Write an SQL query to fetch the first row of a table.
 select * from worker where worker_id = (select min(worker_id) from worker);
+
+-- Q-44. Write an SQL query to fetch the last five records from a table.
+(select * from worker order by worker_id desc limit 5) order by worker_id;
