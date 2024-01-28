@@ -207,3 +207,6 @@ select department, count(department) as depCount from worker group by department
 
 -- Q-41. Write an SQL query to show all departments along with the number of people in there.
 select department, count(department) as depCount from worker group by department;
+
+-- Q-42. Write an SQL query to show the last record from a table.
+select * from worker where worker_id = (select max(worker_id) from worker);
