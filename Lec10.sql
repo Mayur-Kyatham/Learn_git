@@ -204,3 +204,6 @@ select * from worker where worker_id <= ( select count(worker_id)/2 from worker)
 
 -- Q-40. Write an SQL query to fetch the departments that have less than 4 people in it.
 select department, count(department) as depCount from worker group by department having depCount < 4;
+
+-- Q-41. Write an SQL query to show all departments along with the number of people in there.
+select department, count(department) as depCount from worker group by department;
