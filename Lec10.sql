@@ -210,3 +210,6 @@ select department, count(department) as depCount from worker group by department
 
 -- Q-42. Write an SQL query to show the last record from a table.
 select * from worker where worker_id = (select max(worker_id) from worker);
+
+-- Q-43. Write an SQL query to fetch the first row of a table.
+select * from worker where worker_id = (select min(worker_id) from worker);
