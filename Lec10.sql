@@ -216,3 +216,8 @@ select * from worker where worker_id = (select min(worker_id) from worker);
 
 -- Q-44. Write an SQL query to fetch the last five records from a table.
 (select * from worker order by worker_id desc limit 5) order by worker_id;
+
+-- Q-45. Write an SQL query to print the name of employees having the highest salary in each department.
+select w.department, w.first_name, w.salary from
+ (select max(salary) as maxsal, department from worker group by department) temp
+inner join worker w on temp.department = w.department and temp.maxsal = w.salary;
