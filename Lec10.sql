@@ -227,3 +227,7 @@ select distinct salary from worker w1
 where 3 >= (select count(distinct salary) from worker w2 where w1.salary <= w2.salary) order by w1.salary desc;
 -- DRY RUN AFTER REVISING THE CORELATED SUBQUERY CONCEPT FROM LEC-9.
 select distinct salary from worker order by salary desc limit 3;
+
+-- Q-47. Write an SQL query to fetch three min salaries from a table using co-related subquery
+select distinct salary from worker w1
+where 3 >= (select count(distinct salary) from worker w2 where w1.salary >= w2.salary) order by w1.salary desc;
