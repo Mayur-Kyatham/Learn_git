@@ -238,3 +238,6 @@ where n >= (select count(distinct salary) from worker w2 where w1.salary <= w2.s
 
 -- Q-49. Write an SQL query to fetch departments along with the total salaries paid for each of them.
 select department , sum(salary) as depSal from worker group by department order by depSal desc;
+
+-- Q-50. Write an SQL query to fetch the names of workers who earn the highest salary.
+select first_name, salary from worker where salary = (select max(Salary) from worker);
