@@ -221,3 +221,9 @@ select * from worker where worker_id = (select min(worker_id) from worker);
 select w.department, w.first_name, w.salary from
  (select max(salary) as maxsal, department from worker group by department) temp
 inner join worker w on temp.department = w.department and temp.maxsal = w.salary;
+
+-- Q-46. Write an SQL query to fetch three max salaries from a table using co-related subquery
+select distinct salary from worker w1
+where 3 >= (select count(distinct salary) from worker w2 where w1.salary <= w2.salary) order by w1.salary desc;
+-- DRY RUN AFTER REVISING THE CORELATED SUBQUERY CONCEPT FROM LEC-9.
+select distinct salary from worker order by salary desc limit 3;
