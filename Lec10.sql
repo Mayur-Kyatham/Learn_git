@@ -241,3 +241,5 @@ select department , sum(salary) as depSal from worker group by department order 
 
 -- Q-50. Write an SQL query to fetch the names of workers who earn the highest salary.
 select first_name, salary from worker where salary = (select max(Salary) from worker);
+
+select department, sum9salary ad depSal from worker group by department order by depSal desc;
