@@ -6,3 +6,4 @@ solution1 = {
 'A':'\033[91mNot quite. While both functions are used to create empty arrays, np.zeros() is initialized with the value 0.',
 'B':"\033[91mNot quite. np.zeros() is inialized, and it gives an output of 0's.",
 'C':"\033[91mNot quite. Most often, np.empty() is faster since it is not initialized.",
+'D':''' \033[92mTrue! np.empty() creates an array with uninitialized elements from available memory space and may be faster to execute.'''}
