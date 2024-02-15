@@ -13,3 +13,10 @@ def mcq(question, solution):
 #     print(question)
     print("\033[1mPlease select the correct option:")
     answer_w = Dropdown(options = solution.keys(), value=None, layout=widgets.Layout(width='25%'))
+   
+    @interact(Answer = answer_w)
+    def print_city(Answer):
+        if(Answer != None):
+            s = solution[Answer]
+#             print("\n")
+            print(s)
