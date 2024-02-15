@@ -9,3 +9,7 @@ solution1 = {
 'D':''' \033[92mTrue! np.empty() creates an array with uninitialized elements from available memory space and may be faster to execute.'''}
 
 def mcq(question, solution):
+    s = ''
+#     print(question)
+    print("\033[1mPlease select the correct option:")
+    answer_w = Dropdown(options = solution.keys(), value=None, layout=widgets.Layout(width='25%'))
