@@ -2,7 +2,7 @@
 def greeting(name, department):
     print("Welcome " + name)
     print("You are part of " + department)
-    print(" ")
+    print("Hello World ")
 
 greeting("Mayur", "Data Scientist")
 
