@@ -19,6 +19,7 @@ int main(){
         st2[i] = c;
         i++;
     }
+    
     st2[i-1]= '\0';
 
     printf("The value of st1 is %s\n", st1);
