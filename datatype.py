@@ -4,5 +4,5 @@ sum = a + b
 print(sum)
 print(type(sum))
 
-# data types in python 
+# data types in python execution 
 
