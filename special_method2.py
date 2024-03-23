@@ -6,4 +6,5 @@ class Apple:
         return "This apple is {} and its flavor is {}".format(self.color, self.flavor)
 
 mayur = Apple("Red", "Sweet")
+
 print(mayur)
