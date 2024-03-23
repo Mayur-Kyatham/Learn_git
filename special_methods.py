@@ -4,4 +4,5 @@ class Apple:
         self.flavor = flavor
 mayur = Apple("red", "sweet")
 print(mayur.color)
+
 print(mayur)
