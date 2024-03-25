@@ -1,2 +1,3 @@
 example text 1
 example text 2
+print("hello world");
