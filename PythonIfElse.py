@@ -1,5 +1,5 @@
 import sys
-hvhjhjhb kkbnj
+
 n = int(input())
 if n % 2 == 1 or n in range(5, 21):
     print("Weird")
