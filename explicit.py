@@ -12,8 +12,7 @@ total = hotel_room + tax
 room_guests = 4
 share_per_person = total/room_guests 
  
-# This line outputs the result of the final calculation stored
-# in the variable "share_per_person"
+# This line outputs the result of the final calculation stored in the variable "share_per_person"
 print("Each person needs to pay: " + str(share_per_person)) # change a data typ
 
 # The following 5 lines assign strings to a list of variables.
