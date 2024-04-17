@@ -3,7 +3,6 @@ b = 54
 sum = a + b
 print("The sum of 4 and 54 is: " + str(sum))
 
-
 # The following lines assign the variable to the left of the = 
 # assignment operator with the values and arithmetic expressions 
 # on the right side of the = assignment operator.
