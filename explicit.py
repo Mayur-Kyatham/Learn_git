@@ -16,7 +16,6 @@ share_per_person = total/room_guests
 # in the variable "share_per_person"
 print("Each person needs to pay: " + str(share_per_person)) # change a data typ
 
-
 # The following 5 lines assign strings to a list of variables.
 salutation = "Dr."
 first_name = "Prisha"
